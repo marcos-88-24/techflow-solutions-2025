@@ -34,4 +34,11 @@ def selecionar_menu(opcao):
         novo_produto = {"Nome": nome_do_produto, "Preco": preço_do_produto, "Quantidade em estoque": quantidade_em_estoque}
         estoque[numero_produto -1] = novo_produto
 
+
+
+
         
+    elif (opcao == '3'):
+        mostrar_produtos()
+        numero_produto = int(input ('Digitar o número produto para excluir: '))
+        del estoque[numero_produto -1]       
