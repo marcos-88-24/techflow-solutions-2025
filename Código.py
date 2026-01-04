@@ -41,4 +41,13 @@ def selecionar_menu(opcao):
     elif (opcao == '3'):
         mostrar_produtos()
         numero_produto = int(input ('Digitar o número produto para excluir: '))
-        del estoque[numero_produto -1]       
+        del estoque[numero_produto -1]
+
+
+        
+    elif (opcao == '4'):
+        limpar_tela()
+        mostrar_produtos()
+        pausar()  
+        
+            
