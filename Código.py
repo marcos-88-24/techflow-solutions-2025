@@ -12,7 +12,7 @@ def mostrar_produtos():
         contador = 1
         for item in estoque:
             print (f'{contador} - {item}')
-            contador += 1    
+            contador += 1  
 
 def selecionar_menu(opcao):
     if (opcao == '1'):
@@ -23,8 +23,7 @@ def selecionar_menu(opcao):
         estoque.append(produto)
 
 
-
-        
+    
     elif (opcao == '2'):
         mostrar_produtos()
         numero_produto = int(input('Digite o número do produto para editar: '))
@@ -49,5 +48,4 @@ def selecionar_menu(opcao):
         limpar_tela()
         mostrar_produtos()
         pausar()  
-        
-            
+
