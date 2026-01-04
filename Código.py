@@ -49,3 +49,17 @@ def selecionar_menu(opcao):
         mostrar_produtos()
         pausar()  
 
+
+def exibir_menu():
+    limpar_tela()
+    print ('---> MENU <---')
+    print ('1. adicionar produto')
+    print ('2. Atualizar produto')
+    print ('3. excluir produto')
+    print ('4. Visualizar estoque')
+    print ('0. Sair do sistema')
+    opcao = input('ESCOLA UMA OPÇÃO: ')
+    selecionar_menu(opcao)
+    exibir_menu()
+
+exibir_menu()
